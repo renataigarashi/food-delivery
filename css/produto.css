@@ -1,0 +1,54 @@
+i.bi-heart:hover {
+    color: var(--red);
+}
+
+#descricao-produto{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40%;
+}
+
+#foto-produto img{
+    display: block;
+    width: 20%;
+    margin: auto;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+
+#foto-produto img:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}
+
+#precos{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.preco-texto{
+    color: var(--cor-da-empresa);
+    font-weight: bold;
+}
+
+.preco-numero {
+    margin-bottom: 1rem;
+}
+
+#adicionar-carrinho{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-padrao {
+    width: 30%;
+}
+
+.botao-padrao i{
+    margin-right: 10px;
+}
+
+
+

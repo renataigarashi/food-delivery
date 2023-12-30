@@ -1,59 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
-    <title>Cadastro de Produto</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><i class="bi bi-list"></i></li>
-          <li><i class="bi bi-card-image"></i></i></li>
-          <li><p>Maringá-PR</p></li>
-          <li><i class="bi bi-card-image"></i></li>
-        </ul>
-      </nav>
-    </header>
 
-    <section>
-        <h1>Cadastro de Produto</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cadastro_produto.css">
+  <title>Cadastro de Produto</title>
+</head>
 
-        <form action="">
-            <div>
-                <label for="">Nome do produto</label>
-                <input type="text">
-                
-                <label for="">Descrição produto</label>
-                <input type="text">
+<body>
+  <header class="cabecalho">
+    <nav class="menu">
+      <ul class="ul-menu">
+        <li><a href="login.html"><i class="bi bi-person"></i></a></li>
+        <li>
+          <p class="nome-localizacao"><i class="bi bi-geo-alt"></i>Maringá-PR</p>
+        </li>
+        <li><i class="bi bi-card-image"></i></li>
+      </ul>
+    </nav>
+  </header>
 
-                <label for="">Categoria</label>
-                <input type="text">
-                
-                <label for="">Preço unitário</label>
-                <input type="text">
+  <section>
+    <h1 class="estilo-h1 estilo-h1-centralizado">Cadastro de Produto</h1>
 
-                <label for="">Código de barras</label>
-                <input type="text">
-                
-                <button>Cadastrar</button>
-            </div>
-        </form>
-    </section>
+    <form action="" class="formulario">
+      <div>
+        <label for="nome-produto">Nome do produto</label>
+        <input type="text" id="nome-produto">
 
-      <footer>
-        <ul>
-          <li><a href=""><i class="bi bi-house-fill"></i><p>Home</p></a></li>
-          <li><a href=""><i class="bi bi-emoji-smile"></i><p>Perfil</p></a></li>
-          <li><i class="bi bi-receipt"></i><p>Cupons</p></li>
-          <li><i class="bi bi-stickies"></i><p>Pedidos</p></li>
-        </ul>
-      </footer>
-    </main>
-  </body>
+        <label for="descricao-produto">Descrição produto</label>
+        <input type="text" id="descricao-produto">
+
+        <label for="categoria-produto">Categoria</label>
+        <input type="text" id="categoria-produto">
+
+        <label for="preco-unitario">Preço unitário</label>
+        <input type="text" id="preco-unitario">
+
+        <label for="codigo-barras">Código de barras</label>
+        <input type="text" id="codigo-barras">
+
+        <button class="botao-padrao">Cadastrar</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <ul class="footer-card">
+      <a href="home.html">
+        <li class="footer-item"><i class="bi bi-house-fill"></i>
+          <p class="footer-nome-item">Home</p>
+        </li>
+      </a>
+      <a href="cadastro_usuario.html">
+        <li class="footer-item"><i class="bi bi-emoji-smile"></i>
+          <p class="footer-nome-item">Cadastro do usuário</p>
+        </li>
+      </a>
+      <a href="cadastro_produto.html">
+        <li class="footer-item"><i class="bi bi-upc-scan"></i>
+          <p class="footer-nome-item">Cadastro de produto</p>
+        </li>
+      </a>
+      <a href="carrinho.html">
+        <li class="footer-item"><i class="bi bi-cart"></i>
+          <p class="footer-nome-item">Carrinho</p>
+        </li>
+      </a>
+      <a href="produto.html
+          ">
+        <li class="footer-item"><i class="bi bi-stickies"></i>
+          <p class="footer-nome-item">Produto</p>
+        </li>
+      </a>
+    </ul>
+  </footer>
+
+</body>
+
 </html>

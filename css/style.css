@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+:root {
+    --background-clean: #ffefe1;
+    --background-grey: #2D4859;
+    --cor-da-empresa: #FFCF12;
+    --red: #FE1512;
+}
+
+/* Estilização HEADER - nav */
+.cabecalho {
+    width: 100%;
+    background-color: var(--red);
+
+}
+
+.menu .ul-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ul-menu li {
+    list-style-type: none;
+    color: #fff;
+    padding: 2rem;
+}
+
+.ul-menu li i{
+    font-size: 30px;
+    color: #fff;
+}
+
+.nome-localizacao {
+    font-size: 20px;
+}
+
+.estilo-h1{
+    font-style: bold;
+    font-size: 35px;
+    margin-bottom: .5rem;
+    color: var(--cor-da-empresa)
+}
+
+
+.estilo-h1-centralizado {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* FORMULARIOS */
+.formulario {
+    max-width: 400px; 
+    margin: 0 auto; 
+  }
+  
+  label {
+    color: var(--background-grey);
+    display: block; 
+    margin-bottom: 0.5rem; 
+    font-weight: bold;
+  }
+
+  input {
+    border: 1px ridge var(--cor-da-empresa);
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: var(--background-grey);
+  }
+  
+  .botao-padrao {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-da-empresa);
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nome-produto{
+      display: flex;
+  }
+
+  .quantidade-produto{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.quantidade-produto i{
+    font-size: 30px;
+    color: var(--cor-da-empresa);
+}
+
+.quantidade-produto i:hover{
+   cursor:pointer
+}
+
+.quantidade-produto p{
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 28px;
+    color: var(---background-grey);
+}
+
+  .top-icons{
+    display: flex;
+    justify-content:space-between;
+    margin: 2rem;
+}
+
+.top-icons i {
+    font-size: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.top-icons i:hover {
+    transform: scale(1.5);
+    transition: 0.2s ease-in-out;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: var(--red);
+    margin-top: 2rem;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: baseline;
+}
+
+.footer-card a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff
+}
+
+.footer-item {
+    margin: 2rem
+}
+
+.footer-item i  {
+    font-size: 50px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.footer-item:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.footer-nome-item {
+    font-weight: 700;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and  (max-width: 667px){
+    body{
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    i.bi-geo-alt, .nome-localizacao, i.bi-card-image{
+        display: none;
+    }
+
+    i.bi-search {
+        position: absolute;
+        margin-left: -3rem;
+    }
+
+    ::-webkit-input-placeholder {
+        margin-left: 5rem;
+        font-size: 1rem
+    }
+
+
+    .formulario {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
+    ul.footer-card {
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+
+    .footer-card a{
+        width: 100%;
+    }
+}
