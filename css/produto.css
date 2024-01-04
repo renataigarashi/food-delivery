@@ -1,4 +1,8 @@
-i.bi-heart:hover {
+i.bi-heart-fill:hover {
+    color: var(--red);
+}
+
+.red {
     color: var(--red);
 }
 

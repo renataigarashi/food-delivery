@@ -5,43 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" >
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
     <title>Login</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><i class="bi bi-list"></i></li>
-          <li><i class="bi bi-card-image"></i></i></li>
-          <li><p>Maringá-PR</p></li>
+    <header class="cabecalho">
+      <nav class="menu">
+        <ul class="ul-menu">
+          <li><a href="login.html"><i class="bi bi-person"></i></a></li>
+          <li>
+            <p class="nome-localizacao"><i class="bi bi-geo-alt"></i>Maringá-PR</p>
+          </li>
           <li><i class="bi bi-card-image"></i></li>
         </ul>
       </nav>
     </header>
 
     <section>
-        <h1>Nome da empresa</h1>
-        <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg" alt="">
+        <h1 class="estilo-h1 estilo-h1-centralizado">Nome da empresa</h1>
+        <img src="https://png.pngtree.com/png-clipart/20220628/original/pngtree-food-logo-png-image_8239850.png" alt="">
 
-        <div>
+        <section class="mensagem" id="mensagem"></section>
+
+        <div class="formulario">
             <label for="">Login</label>
-            <input type="text">
+            <input type="text" id="inputLogin" autocomplete="off">
 
             <label for="">Senha</label>
-            <input type="password">
+            <input type="password" id="inputSenha" autocomplete="off">
 
-            <button>Logar</button>
+            <button id="botaoLogin" class="botao-padrao">Logar</button>
+           <!-- </form> -->
         </div>
     </section>
 
-      <footer>
-        <ul>
-          <li><a href=""><i class="bi bi-house-fill"></i><p>Home</p></a></li>
-          <li><a href=""><i class="bi bi-emoji-smile"></i><p>Perfil</p></a></li>
-          <li><i class="bi bi-receipt"></i><p>Cupons</p></li>
-          <li><i class="bi bi-stickies"></i><p>Pedidos</p></li>
-        </ul>
-      </footer>
+    <footer class="footer">
+      <ul class="footer-card">
+        <a href="index.html">
+          <li class="footer-item"><i class="bi bi-house-fill"></i>
+            <p class="footer-nome-item">Home</p>
+          </li>
+        </a>
+        <a href="cadastro_usuario.html">
+          <li class="footer-item"><i class="bi bi-emoji-smile"></i>
+            <p class="footer-nome-item">Cadastro do usuário</p>
+          </li>
+        </a>
+        <a href="cadastro_produto.html">
+          <li class="footer-item"><i class="bi bi-upc-scan"></i>
+            <p class="footer-nome-item">Cadastro de produto</p>
+          </li>
+        </a>
+        <a href="carrinho.html">
+          <li class="footer-item"><i class="bi bi-cart"></i>
+            <p class="footer-nome-item">Carrinho</p>
+          </li>
+        </a>
+        <a href="produto.html
+            ">
+          <li class="footer-item"><i class="bi bi-stickies"></i>
+            <p class="footer-nome-item">Produto</p>
+          </li>
+        </a>
+      </ul>
+    </footer>
     </main>
+    <script src="./script/script.js"></script>
   </body>
 </html>

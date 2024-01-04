@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/index.css">
   <title>Página Inicial</title>
 </head>
 
@@ -15,8 +15,9 @@
     <nav class="menu">
       <ul class="ul-menu">
         <li><a href="login.html"><i class="bi bi-person"></i></a></li>
-        <li>
-          <p class="nome-localizacao"><i class="bi bi-geo-alt"></i>Maringá-PR</p>
+        <li class="li-busca">
+          <i class="bi bi-geo-alt"></i> <span class="nome-localizacao"></span><input type="text" placeholder="Digite seu cep" id="cep">
+          <button onclick="consultaCep()" class="botao-padrao">Buscar</button>
         </li>
         <li><i class="bi bi-card-image"></i></li>
       </ul>
@@ -58,8 +59,8 @@
         <h3 class="nome-produto">Bebidas</h3>
       </div>
       <div class="card-produto">
-        <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
-          alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MusMZo5GkkQFoZiErNFebItgRNia2KiKnZMIGasKowaqkGc4oOjjEG41KIF7koOa0Gc&usqp=CAUg"
+          alt="" class="pizza">
         <h3 class="nome-produto">Pizza</h3>
       </div>
       <div class="card-produto">
@@ -88,7 +89,7 @@
 
     <footer class="footer">
       <ul class="footer-card">
-        <a href="home.html">
+        <a href="index.html">
           <li class="footer-item"><i class="bi bi-house-fill"></i>
             <p class="footer-nome-item">Home</p>
           </li>
@@ -116,7 +117,7 @@
         </a>
       </ul>
     </footer>
-
+    <script src="./script/script-index.js"></script>
 </body>
 
 </html>

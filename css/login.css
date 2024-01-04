@@ -1,0 +1,20 @@
+img {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 20%;
+}
+
+.div-msg{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    z-index: 999;
+}
+
+.warning {
+    color: var(--red)
+}
+
